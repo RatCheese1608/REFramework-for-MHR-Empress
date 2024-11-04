@@ -23,14 +23,14 @@ Mods::Mods() {
     m_mods.emplace_back(REFrameworkConfig::get());
 
 #if defined(REENGINE_AT)
-    m_mods.emplace_back(std::make_unique<IntegrityCheckBypass>());
+    // m_mods.emplace_back(std::make_unique<IntegrityCheckBypass>());
 #endif
 
 #ifndef BAREBONES
     m_mods.emplace_back(Hooks::get());
     m_mods.emplace_back(LooseFileLoader::get());
 
-    m_mods.emplace_back(VR::get());
+    // m_mods.emplace_back(VR::get());
 
 #if defined(RE8) || defined(RE7)
     m_mods.emplace_back(RE8VR::get());
