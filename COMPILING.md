@@ -37,7 +37,7 @@ cmake -S . -B build ./build -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE
 cmake --build ./build --config Release
 ```
 
-NOTE: Avoid using msys2's python I think using msys2's python interpretor affects the results (originally it kept producing lib instead of dll).
+NOTE: Avoid using msys2's python as it may affects the results (originally it kept producing lib instead of dll).
 
 Without adding `-DPYTHON_EXECUTABLE:FILEPATH`, cmake kept defaulting to use python3.exe from my Msys2 installation.
 
